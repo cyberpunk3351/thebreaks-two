@@ -123,6 +123,11 @@ add_action( 'widgets_init', 'thebreaks_two_widgets_init' );
 function thebreaks_two_scripts() {
 	wp_enqueue_style( 'thebreaks-two-style', get_stylesheet_uri() );
 	// wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/css/main.min.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.css' );
+	// wp_enqueue_style( 'sociallink', get_template_directory_uri() . '/assets/css/social-link.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/fontawesome.css' );
+	// wp_enqueue_style( 'fontawesome', '//use.fontawesome.com/releases/v5.2.0/css/all.css' );
+	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/genericons/genericons.css');
 
 	// wp_enqueue_script( 'thebreaks-two-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -133,6 +138,7 @@ function thebreaks_two_scripts() {
 	// }
 }
 add_action( 'wp_enqueue_scripts', 'thebreaks_two_scripts' );
+
 
 // /**
 //  * Implement the Custom Header feature.

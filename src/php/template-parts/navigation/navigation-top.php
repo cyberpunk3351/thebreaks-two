@@ -1,4 +1,4 @@
-<label class="show-menu" for="show-menu">Меню <i class="fa fa-caret-down"></i></label>
+<label class="show-menu" for="show-menu">Меню</label>
 <input id="show-menu" type="checkbox" role="button">
 <?php
 wp_nav_menu(array(

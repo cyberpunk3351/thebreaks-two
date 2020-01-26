@@ -2,24 +2,8 @@
   font-family: "lato-font";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/Lato-Regular/Lato-Regular.eot");
-  src: url("../fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular/Lato-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "lato-heavy";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Lato-Regular/Lato-Heavy.eot");
-  src: url("../fonts/Lato-Regular/Lato-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular/Lato-Heavy.woff") format("woff"), url("../fonts/Lato-Regular/Lato-Heavy.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "lato-bold";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/Lato-Regular/lato-bold.eot");
-  src: url("../fonts/Lato-Regular/lato-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular/lato-bold.woff") format("woff"), url("../fonts/Lato-Regular/lato-bold.ttf") format("truetype");
+  src: url("assets/fonts/Lato-Regular/Lato-Regular.eot");
+  src: url("assets/fonts/Lato-Regular/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Lato-Regular/Lato-Regular.woff") format("woff");
 }
 
 *,
@@ -138,6 +122,7 @@
 }
 
 .mainMenu .menu-item-has-children > a:after {
+  font-family: "genericons";
   content: "\f431";
   margin-left: 0.425em;
   /* position: absolute */
