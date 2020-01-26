@@ -37,7 +37,7 @@ gulp.task('sass', function() {
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 5 versions']))
 	//.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(gulp.dest('src/css')) // папака в которую складывают уже готовые css стили
+	.pipe(gulp.dest('src/assets/css')) // папака в которую складывают уже готовые css стили
 });
 
 gulp.task('styles', function() {
