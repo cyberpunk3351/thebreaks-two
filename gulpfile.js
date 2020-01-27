@@ -58,9 +58,9 @@ gulp.task('styles', function() {
 //         .pipe(browserSync.reload({stream: true}))
 // });
 
-gulp.task('social-link', async function(){
-    return gulp.src(dir.src + 'css/social-link.css')
-        .pipe(newer(dir.build + 'assets/css/social-link.css'))
+gulp.task('srccss', async function(){
+    return gulp.src(dir.src + 'assets/css/**/*.css')
+        .pipe(newer(dir.build + 'assets/css/**/*.css'))
         .pipe(gulp.dest(dir.build + 'assets/css'));
 });
 
@@ -125,7 +125,7 @@ gulp.task('concat', function() {
 
 gulp.task('watch', function() {
     gulp.watch(dir.src + 'php/**/*.php', gulp.parallel('php'));
-    // gulp.watch(dir.src + 'css/style.css', gulp.parallel('mainstyle'));
+    gulp.watch(dir.src + 'assets/css/**/*.css', gulp.parallel('srccss'));
     gulp.watch(dir.src + 'sass/**/*.sass', gulp.parallel('sass'));
     // gulp.watch(dir.src + 'sass-style/style-style.sass', gulp.parallel('styles'));
     gulp.watch([dir.src + 'assets/css/style.css', dir.build + 'assets/css/main.min.css'], gulp.parallel('concat'));
@@ -134,4 +134,4 @@ gulp.task('watch', function() {
 });
 
 // gulp.task('default', gulp.parallel('sass', 'styles', 'gcmq', 'php', 'concat', 'watch', 'browser-sync'));
-gulp.task('default', gulp.parallel('sass', 'php', 'gcmq','concat', 'watch', 'browser-sync'));
+gulp.task('default', gulp.parallel('sass', 'php', 'srccss', 'gcmq','concat', 'watch', 'browser-sync'));

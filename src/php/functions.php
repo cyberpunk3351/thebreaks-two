@@ -46,6 +46,7 @@ if ( ! function_exists( 'thebreaks_two_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'thebreaks-two' ),
+			'social' => __( 'Social Links Menu', 'thebreaks-two' ),
 		) );
 
 		/*
@@ -121,13 +122,15 @@ add_action( 'widgets_init', 'thebreaks_two_widgets_init' );
  * Enqueue scripts and styles.
  */
 function thebreaks_two_scripts() {
-	wp_enqueue_style( 'thebreaks-two-style', get_stylesheet_uri() );
+	
 	// wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/css/main.min.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.css' );
-	// wp_enqueue_style( 'sociallink', get_template_directory_uri() . '/assets/css/social-link.css' );
+	wp_enqueue_style( 'sociallink', get_template_directory_uri() . '/assets/css/social-link.css' );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/fontawesome.css' );
 	// wp_enqueue_style( 'fontawesome', '//use.fontawesome.com/releases/v5.2.0/css/all.css' );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/genericons/genericons.css');
+
+	wp_enqueue_style( 'thebreaks-two-style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'thebreaks-two-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -168,3 +171,24 @@ add_action( 'wp_enqueue_scripts', 'thebreaks_two_scripts' );
 // }
 
 require get_template_directory() . '/inc/walker.php';
+
+// SOCIAL LINK
+function thebreaks_two_social_menu() {
+    if ( has_nav_menu( 'social' ) ) {
+        wp_nav_menu(
+            array(
+                'theme_location'  => 'social',
+                'container'       => 'div',
+                'container_id'    => '',
+                'container_class' => 'menu-social',
+                'menu_id'         => '',
+                'menu_class'      => 'menu-items',
+                'depth'           => 1,
+                'link_before'     => '<span class="screen-reader-text"> ',
+                'link_after'      => '</span>',
+                'fallback_cb'     => '',
+            )
+        );
+    }
+}
+// SOCIAL LINK: END
