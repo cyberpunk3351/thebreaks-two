@@ -1,5 +1,3 @@
-/* test */
-
 .menu-social li a[href*="facebook.com"]::before { content: '\f09a'; }
 .menu-social li a[href*="flickr.com"]::before { content: '\f16e'; }
 .menu-social li a[href*="foursquare.com"]::before { content: '\f180'; }
