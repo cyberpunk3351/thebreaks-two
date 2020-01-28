@@ -37,7 +37,8 @@ gulp.task('sass', function() {
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 5 versions']))
 	//.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(gulp.dest('src/assets/css')) // папака в которую складывают уже готовые css стили
+    .pipe(gulp.dest('src/assets/css')) // папака в которую складывают уже готовые css стили
+    .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('styles', function() {
@@ -47,7 +48,8 @@ gulp.task('styles', function() {
 	// .pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 5 versions']))
 	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Opt., comment out when debugging
-	.pipe(gulp.dest(dir.src + 'sass-style')) // папака в которую складывают уже готовые css стили
+    .pipe(gulp.dest(dir.src + 'sass-style')) // папака в которую складывают уже готовые css стили
+    .pipe(browserSync.reload({stream: true}));
 });
 // gulp.task('pug', function(){
 //     return gulp.src(['src/pug/*.pug','!src/pug/_layouts/*.*'])
@@ -110,7 +112,8 @@ gulp.task('gcmq', async function () {
 gulp.task('concat', function() {
     return gulp.src([dir.src + 'assets/css/style.css', dir.build + 'assets/css/main.min.css'])
         .pipe(concat('style.css'))
-        .pipe(gulp.dest(dir.build));
+        .pipe(gulp.dest(dir.build))
+        .pipe(browserSync.reload({stream: true}));
 });
 
 // gulp.task('copy-img', function() {

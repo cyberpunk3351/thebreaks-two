@@ -13,10 +13,58 @@
     height: 75px
     object-fit: contain
 
+.heder__social
+    display: flex
+    flex-direction: row
+    align-items: right
+
+
+.searchform2 
+	margin-left: 15px
+	font-family: $default-font
+
+.searchform2 input 
+	font-family: $default-font
+	height: 39px
+	border: solid 1px #44464A
+	background-color: #00ADB5
+	border-radius: 10em
+	padding-top: 3px
+	padding-left: 15px
+	/* padding: 9px 10px 5px 20px */
+	outline: none
+	border-radius: 10em	
+	-webkit-transition: all .5s
+	-moz-transition: all .5s
+	transition: all .5s
+	
+
+
+.searchform2 input:hover 
+	background-color: #eee
+	box-shadow: 0 0 5px rgba(109,207,246,.5)
+
+.searchform2 ::placeholder 
+	font-family: inherit
+	font-weight: 400
+	color: #303135
+
+.screen-reader-text 
+	clip: rect(1px, 1px, 1px, 1px)
+	height: 1px
+	overflow: hidden
+	position: absolute !important
+	width: 1px
+	/* many screen reader and browser combinations announce broken words as they would appear visually */
+	word-wrap: normal !important
+
 @media (max-width: 767.98px)
     .site-header
         .containers
             width: 100%
+            flex-direction: column
+    .heder__social
+        // flex-direction: column
 
 
 @media (min-width: 767px) and (max-width: 1199.98px)

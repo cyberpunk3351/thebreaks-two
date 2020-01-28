@@ -2,6 +2,12 @@
 @import "vars"
 @import "color"
 
+$default-font: "lato-font", sans-serif
+$title-font: "lato-heavy", sans-serif
+$menufont: "lato-heavy", sans-serif
+$spanfont: "lato-font", sans-serif
+$fontsize: 16px
+
 *,
 *::before,
 *::after
@@ -12,7 +18,7 @@
 .wrapper
 	width: 100%
 
-.containers 
+.containers
     width: 1200px
     padding-right: 15px
     padding-left: 15px
@@ -29,6 +35,8 @@
 	word-wrap: normal !important
 
 .TestBox
+	position: absolute
+	z-index: -1000
 	width: 300px
 	height: 400px
 	background-color: #fff
@@ -39,3 +47,5 @@
 @import "nav"
 
 @import "header"
+
+@import "mainContent"
