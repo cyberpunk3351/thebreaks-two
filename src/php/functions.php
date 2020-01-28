@@ -126,7 +126,7 @@ function thebreaks_two_scripts() {
 	// wp_enqueue_style( 'my-style', get_template_directory_uri() . '/assets/css/main.min.css' );
 	
 	wp_enqueue_style( 'sociallink', get_template_directory_uri() . '/assets/css/social-link.css' );
-	// wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css' );
+	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css' );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/genericons/genericons.css');
 
