@@ -12,15 +12,17 @@
  * @package thebreaks-two
  */
 
-get_header();
-?>
-
+get_header();?>
     <section class="content">
         <div class="mainContent">
             <div class="containers">
             
-            </div>
-        </div>
+                <?php get_template_part( 'template-parts/content/content', 'slider'); ?>
+                <?php get_template_part( 'template-parts/content/content'); ?>
+            </div> <!-- END: mainContent -->
+        </div> <!--END: containers -->
+
+        <?php the_posts_navigation(); ?>
 
     </section>
 
