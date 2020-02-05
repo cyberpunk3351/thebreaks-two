@@ -15,6 +15,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-family: "lato-font", sans-serif;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -148,9 +152,7 @@
   font-family: "genericons";
   content: "\f431";
   margin-left: 0.425em;
-  /* position: absolute */
-  /* right: 0.625em */
-  /* top: 0.8125em */
+  position: absolute;
 }
 
 .menu-items {
@@ -333,6 +335,18 @@
   padding-top: 16px;
 }
 
+@media (max-width: 767.98px) {
+  .content .containers {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199.98px) {
+  .content .containers {
+    width: 100%;
+  }
+}
+
 .contentAll {
   border-right: 1px solid #B6B9B8;
 }
@@ -343,6 +357,7 @@
   display: flex;
   padding-top: 16px;
   padding-bottom: 16px;
+  padding-right: 15px;
   border-bottom: 1px solid #B6B9B8;
 }
 

@@ -1,4 +1,4 @@
-<!-- <div class="contentAll"> -->
+<div class="contentAll">
     <?php if (have_posts()) :
     while (have_posts()) : the_post(); ?>            
         <div class="info__left_shortNews">
@@ -15,4 +15,4 @@
     <?php else : ?>
         <p>Non d sdf sde</p>
     <?php endif; ?>
-<!-- </div> -->
+</div>
