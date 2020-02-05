@@ -129,9 +129,8 @@ function thebreaks_two_scripts() {
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/font-awesome.css' );
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/genericons/genericons.css');
-
-	wp_enqueue_style( 'thebreaks-two-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/assets/css/all.css' );
+	wp_enqueue_style( 'thebreaks-two-style', get_stylesheet_uri() );
 
 	// wp_enqueue_script( 'thebreaks-two-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

@@ -374,3 +374,45 @@ html {
   height: 400px;
   background-color: #222831;
 }
+
+.site-footer .wrapper {
+  background-color: #393E46;
+}
+
+.footer-main {
+  height: 150px;
+  width: 100%;
+}
+
+.footer-bottom {
+  height: 30px;
+  width: 100%;
+  background-color: #222831;
+  color: #C2C2C2;
+}
+
+.footer-bottom .containers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .site-footer .containers {
+    width: 100%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199.98px) {
+  .site-footer .containers {
+    width: 100%;
+  }
+}
