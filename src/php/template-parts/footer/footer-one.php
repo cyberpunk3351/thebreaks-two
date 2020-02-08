@@ -3,10 +3,17 @@
         <div class="containers">
             <div class="footer-main-one">
                 <p>Menu</p>
-                    <ul>
-                        <li>Main</li>
-                        <li>Articles</li>
-                    </ul>
+                    <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'menu-1',
+                        'menu_class' => '',
+                        'container' => false,
+                        'item_wrap' => '<ul>%3$s</ul>',
+                        'menu_id' => 'menu2',
+                        'depth' => 1,
+                        'walker' => new WPDocs_Walker_Nav_Menu(),
+                    ));
+                    ?>
             </div>
             <div class="footer-main-two">
                 <p>Popular Post</p>

@@ -47,6 +47,7 @@ if ( ! function_exists( 'thebreaks_two_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'thebreaks-two' ),
 			'social' => __( 'Social Links Menu', 'thebreaks-two' ),
+			// 'footer-main' => __( 'Footer Main', 'thebreaks-two' ),
 		) );
 
 		/*
@@ -192,6 +193,28 @@ function thebreaks_two_social_menu() {
     }
 }
 // SOCIAL LINK: END
+
+
+// FOOTER LINK
+function thebreaks_two_footer_main() {
+    if ( has_nav_menu( 'footer-main' ) ) {
+        wp_nav_menu(
+            array(
+                'theme_location'  => 'footer-main',
+                'container'       => 'div',
+                'container_id'    => '',
+                'container_class' => 'menu-footer',
+                'menu_id'         => '',
+                'menu_class'      => 'menu-items',
+                'depth'           => 1,
+                'link_before'     => '<span class="screen-reader-text"> ',
+                'link_after'      => '</span>',
+                'fallback_cb'     => '',
+            )
+        );
+    }
+}
+// FOOTER LINK: END
 
 add_filter('nav_menu_item_id', 'clear_nav_menu_item_id', 10, 3);
 function clear_nav_menu_item_id($id, $item, $args) {
