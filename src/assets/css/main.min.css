@@ -348,7 +348,22 @@ html {
 }
 
 .contentAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contentAll__left {
   border-right: 1px solid #B6B9B8;
+  width: 870px;
+}
+
+.contentAll__right {
+  width: 270px;
+  background-color: #cc66ff;
 }
 
 .contentAll .info__left_shortNews {
