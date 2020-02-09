@@ -1,6 +1,7 @@
 <div class="contentAll">
 
     <div class="contentAll__left">
+        <div class="contentAll__left--top"></div>
         <?php if (have_posts()) :
         while (have_posts()) : the_post(); ?>            
             <div class="info__left_shortNews">
@@ -18,6 +19,8 @@
             <p>Non d sdf sde</p>
         <?php endif; ?>
     </div>
-    <div class="contentAll__right"></div>
+    <div class="contentAll__right">
+        <?php get_sidebar(); ?>
+    </div>
 
 </div>
