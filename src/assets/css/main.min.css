@@ -370,7 +370,6 @@ html {
 
 .contentAll__right {
   width: 270px;
-  background-color: #cc66ff;
 }
 
 .contentAll .info__left_shortNews {
@@ -394,7 +393,7 @@ html {
 .bigBox {
   width: 100%;
   height: 400px;
-  background-color: #222831;
+  background-color: #393E46;
 }
 
 .site-footer .wrapper {
@@ -461,15 +460,21 @@ html {
   }
 }
 
-.sidebar {
-  padding-left: 15px;
-}
-
 .sidebar ul {
   list-style: none;
 }
 
 .sidebar a:link, .sidebar a:visited {
   text-decoration: none;
+  color: #EFEFEF;
+}
+
+.sidebar__recent {
+  height: 32px;
+  background-color: #393E46;
+}
+
+.sidebar__recent--title p {
+  text-align: center;
   color: #EFEFEF;
 }
