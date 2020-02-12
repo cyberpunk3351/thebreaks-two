@@ -1,13 +1,46 @@
 .sidebar
     // padding-left: 15px
-    ul
-        list-style: none
-    a:link, a:visited
-        text-decoration: none
-        color: $white
+    display: flex
+    flex-direction: column
     &__recent
         height: 32px
         background-color: $dark-secod
-        &--title p
-            text-align: center
-            color: $white
+        ul 
+            list-style-type: none
+            border: 1px solid #c2c2c2
+            // padding-top: 16px
+            li
+                // padding-bottom: 8px
+                border-bottom: 1px solid #c2c2c2
+                &:last-child
+                    border-bottom: none
+            & a
+                text-decoration: none
+                color: $text
+                padding: 7px 10px 7px 7px
+                display: block
+                &:hover
+                    background-color: $main-color
+                    color: $white
+        &--title
+            display: flex
+            align-items: center
+            justify-content: center
+            // flex-direction: row
+            width: 100%
+            height: 100%
+            p
+                // text-align: center
+                color: $white
+
+.widget-title
+    height: 32px
+    background-color: $dark-secod
+    color: $whaite
+    display: flex
+    align-items: center
+    justify-content: center
+ul 
+    list-style-type: none
+.widget
+    padding-bottom: 16px
