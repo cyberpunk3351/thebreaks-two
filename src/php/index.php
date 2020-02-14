@@ -15,10 +15,16 @@
 get_header();?>
     <section class="content">
         <div class="mainContent">
-            <div class="containers">
-            
+            <div class="containers">            
                 <?php get_template_part( 'template-parts/shortcontent/shortcontent', 'slider'); ?>
-                <?php get_template_part( 'template-parts/shortcontent/shortcontent'); ?>
+                <div class="contentAll">
+                    <div class="contentAll__left">
+                        <?php get_template_part( 'template-parts/shortcontent/shortcontent'); ?>
+                    </div>
+                    <div class="contentAll__right">
+                        <?php get_sidebar(); ?>
+                    </div>
+                </div>
             </div> <!-- END: mainContent -->
         </div> <!--END: containers -->
 
