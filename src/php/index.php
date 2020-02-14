@@ -30,7 +30,5 @@ get_header();?>
 
         <?php the_posts_navigation(); ?>
 
-    </section>
-
-<?php
-get_footer();
+        <?php
+        get_footer();
