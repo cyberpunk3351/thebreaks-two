@@ -17,8 +17,8 @@ get_header();?>
         <div class="mainContent">
             <div class="containers">
             
-                <?php get_template_part( 'template-parts/content/content', 'slider'); ?>
-                <?php get_template_part( 'template-parts/content/content'); ?>
+                <?php get_template_part( 'template-parts/shortcontent/shortcontent', 'slider'); ?>
+                <?php get_template_part( 'template-parts/shortcontent/shortcontent'); ?>
             </div> <!-- END: mainContent -->
         </div> <!--END: containers -->
 
