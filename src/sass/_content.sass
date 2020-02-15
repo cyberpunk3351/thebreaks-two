@@ -3,6 +3,8 @@
     padding-top: 16px
     display:  flex
     justify-content: space-between
+    a:link
+        text-decoration: none
     &__left
         border-right: 1px solid $border-bottom
         width: 870px
@@ -20,7 +22,28 @@
             padding-bottom: 16px
             padding-right: 15px
             border-bottom: 1px solid $border-bottom
+                        
             &_author
                 padding-left: 15px
+                a
+                    color: #222831
+                a:link
+                    text-decoration: none
+                a:hover 
+                    text-decoration: underline
+                    color: $main-light
+                h1 
+                    padding-bottom: 4px
+                span 
+                    font-size: 14px
                 p 
-                    font-size: 16px
+                    padding-top: 8px
+                .linkMore
+                    color: $main-light
+                    line-height: 40px
+                    height: 32px
+                    padding: 12px 25px
+                    background: #00ADB5
+                    & a:hover
+                        color: #fff
+                        text-decoration: none
