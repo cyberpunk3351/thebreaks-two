@@ -20,7 +20,17 @@ get_header();?>
                 <div class="contentAll">
                     <div class="contentAll__left">
                         <?php get_template_part( 'template-parts/shortcontent/shortcontent'); ?>
-                        <?php the_posts_navigation(); ?>
+
+                        <?php
+                        the_posts_navigation( array(
+                            'prev_text'          => 'Предыдущие записи',
+                            'next_text'          => 'Следующие записи',
+                            'screen_reader_text' => 'Навигация',
+                        ) ); ?>
+
+
+
+
                     </div>                    
                     <div class="contentAll__right">
                         <?php get_sidebar(); ?>
