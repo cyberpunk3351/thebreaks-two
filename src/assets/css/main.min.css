@@ -55,6 +55,12 @@ html {
   content: '\f72f';
 }
 
+.navigation {
+  padding-top: 32px;
+  width: 100%;
+  text-align: center;
+}
+
 /* MENU */
 .wrpMenu {
   width: 100%;

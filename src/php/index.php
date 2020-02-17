@@ -20,15 +20,14 @@ get_header();?>
                 <div class="contentAll">
                     <div class="contentAll__left">
                         <?php get_template_part( 'template-parts/shortcontent/shortcontent'); ?>
-                    </div>
+                        <?php the_posts_navigation(); ?>
+                    </div>                    
                     <div class="contentAll__right">
                         <?php get_sidebar(); ?>
                     </div>
                 </div>
-            </div> <!-- END: mainContent -->
+                
+            </div> <!-- END: mainContent -->            
         </div> <!--END: containers -->
-
-        <?php the_posts_navigation(); ?>
-
         <?php
         get_footer();
