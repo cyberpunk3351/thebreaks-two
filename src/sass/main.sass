@@ -50,27 +50,24 @@ html
 
 
 .navigation
-	padding-top: 32px
+	margin-top: 32px
+	& a 
+		color: $text
+	// padding-top: 32px
 	width: 100%
+	font-weight: 800
 	text-align: center
-
-
-#true_loadmore
 	background-color: #ddd
 	border-radius: 2px
 	display: block
-	text-align: center
-	font-size: 14px
-	font-weight: 800
 	letter-spacing: 1px
 	cursor: pointer
 	text-transform: uppercase
 	padding: 10px 0
-	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out; /* CSS-анимация*/
-
-#true_loadmore:hover
-	background-color: #767676
-	color: #fff
+	transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.3s ease-in-out
+	&:hover
+		background-color: #767676
+		color: $white
 
 
 @import "nav"
