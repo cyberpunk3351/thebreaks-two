@@ -5,7 +5,11 @@
             document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));
         //]]>
         </script>
-        <?php wp_footer(); ?>
+
+        
     </section>
+    <?php wp_footer(); ?>
+    <!-- <script src="/wp/wp-content/themes/thebreaks-two/assets/js/glide.min.js"></script>
+    <script src="/wp/wp-content/themes/thebreaks-two/assets/js/glide.js"></script> -->
 </body>
 </html>
