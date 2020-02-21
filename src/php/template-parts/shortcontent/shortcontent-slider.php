@@ -1,5 +1,5 @@
-<section class="content">
-    <div class="containers">
+<section class="slider">
+    <!-- <div class="containers"> -->
         <div class="content_slider">
             <div class="glide" id="Glide">
                 <div class="glide__arrows">
@@ -36,5 +36,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    <!-- </div> -->
 </section>
