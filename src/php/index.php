@@ -30,7 +30,6 @@ get_header();?>
 
 
 
-
                     </div>                    
                     <div class="contentAll__right">
                         <?php get_sidebar(); ?>

@@ -8,30 +8,39 @@
                 </div>
                 <div class="glide__wrapper">
                     <div class="glide__track">
-                        <div class="glide__slide">
-                            <div class="contetn"><img src="/wp/wp-content/themes/thebreaks-two/assets/img/slider_01.jpg" alt="Image">
-                                <div class="text">
-                                    <h3>the Prodigy</h3>
-                                    <p></p>No Tourists is the seventh studio album by English electronic music band The Prodigy, released on 2 November 2018 on Take Me to the Hospital.
+
+
+                        <?php 
+                        $posts = get_posts( array(
+                            'numberposts' => -1,
+                            'category_name'    => 'slider',
+                            'orderby'     => 'date',
+                            'order'       => 'DESC',
+                            'post_type'   => 'post',
+                            'suppress_filters' => true, 
+                        ) );
+
+                        foreach( $posts as $post ){
+                            setup_postdata($post);
+                            ?>
+                            <div class="glide__slide">
+                                <div class="contetn">
+                                    <?php the_post_thumbnail('full'); ?>
+                                    <div class="text">
+                                        <h3><?php the_title() ?></h3>
+                                        <p><?php the_excerpt() ?></p>
+                                        
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="glide__slide">
-                            <div class="contetn"><img src="/wp/wp-content/themes/thebreaks-two/assets/img/slider_02.jpg" alt="Image">
-                                <div class="text">
-                                    <h3>the Prodigy</h3>
-                                    <p></p>No Tourists is the seventh studio album by English electronic music band The Prodigy, released on 2 November 2018 on Take Me to the Hospital.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="glide__slide">
-                            <div class="contetn"><img src="/wp/wp-content/themes/thebreaks-two/assets/img/slider_03.jpg" alt="Image">
-                                <div class="text">
-                                    <h3>the Prodigy</h3>
-                                    <p></p>No Tourists is the seventh studio album by English electronic music band The Prodigy, released on 2 November 2018 on Take Me to the Hospital.
-                                </div>
-                            </div>
-                        </div>
+                            <?php
+                        }
+
+                        wp_reset_postdata(); // сброс                        
+                        ?>
+
+
+
                     </div>
                 </div>
             </div>
