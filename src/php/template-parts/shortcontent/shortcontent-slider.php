@@ -11,23 +11,16 @@
 
 
                         <?php 
-                        $posts = get_posts( array(
-                            'numberposts' => -1,
-                            'category_name'    => 'slider',
-                            'orderby'     => 'date',
-                            'order'       => 'DESC',
-                            'post_type'   => 'post',
-                            'suppress_filters' => true, 
-                        ) );
-
-                        foreach( $posts as $post ){
+                        $args = array( 'posts_per_page' => 2 );
+                        $lastposts = get_posts( $args );
+                        foreach( $lastposts as $post ){
                             setup_postdata($post);
                             ?>
                             <div class="glide__slide">
                                 <div class="contetn">
                                     <?php the_post_thumbnail('full'); ?>
                                     <div class="text">
-                                        <h3><?php the_title() ?></h3>
+                                        <h3><?php echo get_the_title($post) ?></h3>
                                         <p><?php the_excerpt() ?></p>
                                         
                                     </div>
