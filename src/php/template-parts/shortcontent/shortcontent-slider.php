@@ -4,12 +4,10 @@
             <div class="glide" id="Glide">
                 <div class="glide__arrows">
                     <button class="glide__arrow prev" data-glide-dir="&lt;">
-                        <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/return.svg" height="42" width="42"></i> -->
-                        <svg><image xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/return.svg"/></svg>
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/return.svg" height="20" width="20"></i>
                     </button>
                     <button class="glide__arrow next" data-glide-dir="&gt;">
-                        <!-- <img src="<?php echo get_template_directory_uri() ?>/assets/img/next.svg" height="42" width="42"></i> -->
-                        <svg><image xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/next.svg"/></svg>
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/next.svg" height="20" width="20"></i>
                     </button>
                 </div>
                 <div class="glide__wrapper">
@@ -28,6 +26,7 @@
                                     <div class="text">
                                         <h3><?php echo get_the_title($post) ?></h3>
                                         <p><?php the_excerpt() ?></p>
+                                        <span class="linkMore"><a href="<?php the_permalink() ?>">Читать</a></span>
                                         
                                     </div>
                                 </div>

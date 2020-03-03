@@ -49,11 +49,18 @@ p {
 .glide__arrow svg {
   width: 20px;
   height: 20px;
+  fill: red;
 }
 
 .glide__arrow image {
   width: 20px;
   height: 20px;
+}
+
+.glide__arrow object {
+  width: 20px;
+  height: 20px;
+  fill: red;
 }
 
 .TestBox {
@@ -477,6 +484,42 @@ p {
   text-decoration: none;
 }
 
+@media (max-width: 767.98px) {
+  .contentAll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contentAll .contentAll__left {
+    width: 100%;
+  }
+  .contentAll .contentAll__right {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199.98px) {
+  .contentAll {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .contentAll .contentAll__left {
+    width: 100%;
+  }
+  .contentAll .contentAll__right {
+    display: none;
+  }
+}
+
 .slider {
   width: 100%;
   height: 336px;
@@ -521,6 +564,10 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contetn img {
+    width: 40%;
+    height: 40%;
   }
 }
 
