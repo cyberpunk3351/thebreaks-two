@@ -46,6 +46,10 @@ p {
   word-wrap: normal !important;
 }
 
+.glide__arrow img {
+  color: white;
+}
+
 .TestBox {
   position: absolute;
   z-index: -1000;

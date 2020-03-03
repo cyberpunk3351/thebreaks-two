@@ -3,8 +3,8 @@
         <div class="content_slider">
             <div class="glide" id="Glide">
                 <div class="glide__arrows">
-                    <button class="glide__arrow prev" data-glide-dir="&lt;"><i class="fas fa-angle-left"></i></button>
-                    <button class="glide__arrow next" data-glide-dir="&gt;"><i class="fas fa-angle-right"></i></button>
+                    <button class="glide__arrow prev" data-glide-dir="&lt;"><img src="<?php echo get_template_directory_uri() ?>/assets/img/return.svg" height="42" width="42"></i></button>
+                    <button class="glide__arrow next" data-glide-dir="&gt;"><img src="<?php echo get_template_directory_uri() ?>/assets/img/next.svg" height="42" width="42"></i></button>
                 </div>
                 <div class="glide__wrapper">
                     <div class="glide__track">
